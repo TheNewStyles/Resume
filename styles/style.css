@@ -74,7 +74,7 @@ header img {
 section h1 {
   font-size: 1.8em;
   line-height: 1em;
-  margin-bottom: .6em;
+  margin-bottom: .6em;text-shadow: h v blur rgb(0, 0, 0);
 }
 
 /* Same font-size and line-height as p element */
@@ -175,7 +175,7 @@ and (max-device-width : 1024px)  {
 .work-display p {
   line-height: 1.8;
   font-size: 1.1em;
-  text-align: left;
+  text-align: left;    
 }
 
 /* ------------------- Grid -------------------*/
