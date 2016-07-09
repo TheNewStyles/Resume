@@ -37,7 +37,7 @@ img {
 hr {
   border-top: 1px solid #ccc;
   border-bottom: none;
-  margin-top: 3em;
+  margin-top: 2em;
   margin-bottom: 2em;
 }
 
@@ -169,13 +169,18 @@ and (max-device-width : 1024px)  {
 .work-display img {
   border-radius: 3%;
   overflow: hidden;
-  margin-bottom: 15px;
+  margin-bottom: 15px; 
+  /* max-height: 300px;
+  max-width: auto;  */ 
+/*   min-height: 150px; 
+  min-width: auto;   */
 }
 
 .work-display p {
   line-height: 1.8;
+  padding-top: 15px;
   font-size: 1.1em;
-  text-align: left;    
+  text-align: left;  
 }
 
 /* ------------------- Grid -------------------*/
