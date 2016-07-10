@@ -98,6 +98,10 @@ footer hr {
   text-align: center;
 }
 
+.center hr {
+  min-width: 100%;
+}
+
 .wrap {    
     height:auto;    
     position:relative;
