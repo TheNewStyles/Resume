@@ -15,13 +15,13 @@ h1, h2, h3 {
 }
 
 a {
-  color: #3d6dbe;
+  color: #3aafb9;
   text-decoration: none;
 }
 
 a:focus,
 a:hover {
-  color: #6594e0;
+  color: #093a3e;
 }
 
 p {
@@ -43,7 +43,7 @@ hr {
 
 header {
   background-color: #999;
-  background-image: url(../img/background.jpg);
+  background-image: url(../img/strongmen.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   -webkit-background-size: cover;
@@ -133,7 +133,7 @@ footer hr {
 
 @media only screen and (max-width : 800px){
   header img {
-    top:50px;    
+    top:10em;    
   }
   .wrap{
     top: 400px;
@@ -145,7 +145,7 @@ footer hr {
 and (min-device-width : 768px) 
 and (max-device-width : 1024px)  {
   header img {
-    top:50px;    
+    top:10em;    
   }
   .wrap{
     top: 400px;
@@ -174,10 +174,6 @@ and (max-device-width : 1024px)  {
   border-radius: 3%;
   overflow: hidden;
   margin-bottom: 15px; 
-  /* max-height: 300px;
-  max-width: auto;  */ 
-/*   min-height: 150px; 
-  min-width: auto;   */
 }
 
 .work-display p {
@@ -315,7 +311,7 @@ and (max-device-width : 1024px)  {
 
 /* Spotlight */
 .spotlight {
-  background-color: #f3e2d8;
+  background-color: #bfddf3;
   padding: 3em 1em;
   margin-top: 3em;
   margin-bottom: 3em;
@@ -323,28 +319,30 @@ and (max-device-width : 1024px)  {
 }
 
 .spotlight img {
-  width: 60%;
-  max-width: 250px;
+  width: 100%;
+  max-width: 450px;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto; 
   display: block;
+  border-radius: 2%;
+  overflow: hidden; 
 }
 
 .spotlight h1 {
-  color: #e4382c;
+  color: #093a3e;
 }
 
 .spotlight p {
-  color: #6d5e53;
+  color: #093a3e;
   font-size: 1.1em;
 }
 
 .spotlight a {
   background-color: transparent;
-  border: 3px solid #e4382c;
+  border: 3px solid #093a3e;
   padding: 7px 35px;
   border-radius: 3px;
-  color: #e4382c;
+  color: #093a3e;
   font-size: 1.1em;
   opacity: .8;
   margin-bottom: 10px;
@@ -392,7 +390,7 @@ and (max-device-width : 1024px)  {
 }
 
 .social:hover {
-  color: #59d;
+  color: #093a3e;
   cursor: pointer;
 }
 
@@ -456,13 +454,13 @@ and (max-device-width : 1024px)  {
 nav {
     height: 45px;
     width: 100%;
-    background: #EF4136;
+    background: #093a3e;
     font-size: 12pt;
     font-family: 'PT Sans', Arial, sans-serif;
     font-weight: bold;
     position: fixed;
     top: 0;
-    border-bottom: 2px solid #ED1C24;
+    border-bottom: 2px solid white;
     z-index: 500;
 }
 nav ul {
@@ -491,7 +489,7 @@ nav li {
 }
 
 nav a {
-    color: #fff;
+    color: white;
     display: inline-block;
     width: 100px;
     text-align: center;
@@ -501,7 +499,7 @@ nav a {
 }
 
 nav li a {
-    border-right: 1px solid #ED1C24;
+    border-right: 1px solid white;
     box-sizing:border-box;
     -moz-box-sizing:border-box;
     -webkit-box-sizing:border-box;
@@ -512,8 +510,8 @@ nav li:last-child a {
 }
 
 nav a:hover, nav a:active {
-    background-color: #ED1C24;
-    color: gray;
+    background-color: #97c8eb;
+    color: #3aafb9;
 }
 
 nav a#pull {
