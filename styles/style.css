@@ -551,8 +551,8 @@ nav .hamburger {
     }
 
     nav li a {
-        border-bottom: 1px solid #ED1C24;
-        border-right: 1px solid #ED1C24;
+        border-bottom: 1px solid grey;
+        border-right: 1px solid grey;
     }
     nav a {
         text-align: right;
