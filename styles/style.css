@@ -180,9 +180,21 @@ and (max-device-width : 1024px)  {
   line-height: 1.8;
   padding-top: 15px;
   font-size: 1.1em;
-  text-align: left;  
+  text-align: left;
 }
 
+.work-display span {
+  text-align: left;
+  vertical-align: middle;
+  padding-top: 10%;
+  line-height: 1.8;
+  padding-bottom: 2em;
+  font-size: 1.1em;
+}
+
+#BookWormInfo{
+  padding-top: 10%;
+}
 /* ------------------- Grid -------------------*/
 
 .container {
@@ -239,9 +251,7 @@ and (max-device-width : 1024px)  {
 
 }
 
-/* -------------------Custom Blocks----------------- */
-
-/* Gallery */
+/* ------------------- Gallery ------------------- */
 
 .gallery [class*="grid-2"], .gallery [class*="grid-3"]  {
   margin-bottom: 1%;
@@ -253,10 +263,15 @@ and (max-device-width : 1024px)  {
   -webkit-transform: translateZ(0); /* Fix chrome pixel shift */
   transition: opacity .2s ease;
   opacity: 1;
+  max-height: 250px;
 }
 
 .gallery a img:hover {
   opacity: .8;
+}
+
+.gallery h2 {
+  text-align: center;
 }
 
 @media screen and (min-width: 40em) {
@@ -292,7 +307,7 @@ and (max-device-width : 1024px)  {
 }
 
 
-/* Education Block */
+/*------------------- Education Block -------------------*/
 .education {
   font-family: "Lato", sans-serif;
   line-height: 1.5;
@@ -309,7 +324,7 @@ and (max-device-width : 1024px)  {
 
 
 
-/* Spotlight */
+/*------------------- Spotlight -------------------*/
 .spotlight {
   background-color: #bfddf3;
   padding: 3em 1em;
@@ -366,7 +381,7 @@ and (max-device-width : 1024px)  {
 }
 
 
-/* Contact list */
+/*------------------- Contact list -------------------*/
 
 .contact {
   padding: 50px 0;
@@ -449,7 +464,7 @@ and (max-device-width : 1024px)  {
 
 
 
-/* Nav Menu */
+/*------------------- Nav Menu -------------------*/
 
 nav {
     height: 45px;
@@ -522,7 +537,7 @@ nav .hamburger {
   display: none;
 }
 
-/* nav media queries */
+/*------------------- nav media queries -------------------*/
 
 @media screen and (max-width: 600px) {
     nav { 
@@ -630,7 +645,7 @@ nav .hamburger {
 }
 
 
-/* Hamburger menu nav */
+/*------------------- Hamburger menu nav -------------------*/
 .hamburger {
   padding: 15px 15px;
   display: inline-block;
@@ -712,3 +727,22 @@ nav .hamburger {
     transition: top 0.12s 0.18s cubic-bezier(0.33333, 0, 0.66667, 0.33333), -webkit-transform 0.15s 0.42s cubic-bezier(0.215, 0.61, 0.355, 1);
     transition: top 0.12s 0.18s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.15s 0.42s cubic-bezier(0.215, 0.61, 0.355, 1);
     transition: top 0.12s 0.18s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.15s 0.42s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.15s 0.42s cubic-bezier(0.215, 0.61, 0.355, 1); }
+
+
+/*------------------- JavaScript Games -------------------*/
+
+canvas {
+  vertical-align: middle;
+  background-color: #093A3E; 
+  border-radius: 3%;
+  overflow: hidden; 
+}
+
+#gameCanvas {
+  margin-bottom: 40px;
+  padding: 0 0;
+}
+
+#phaserGame {
+  padding: 0 0;
+}
