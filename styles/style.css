@@ -192,9 +192,6 @@ and (max-device-width : 1024px)  {
   font-size: 1.1em;
 }
 
-#BookWormInfo{
-  padding-top: 10%;
-}
 /* ------------------- Grid -------------------*/
 
 .container {
