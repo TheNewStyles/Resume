@@ -247,7 +247,7 @@ drawStartButton();
 
 ////////////////   Phaser framework breakoutgame   //////////////// 
 var game = new Phaser.Game(480, 320, Phaser.AUTO, phaserGame, { 
-	preload: preload, create: create, update: update
+	preload: preload, create: create, update: update, render: render
 	});
 
 
@@ -323,6 +323,10 @@ function update() {
 
 	ball.checkWorldBounds = true;	
     ball.events.onOutOfBounds.add(ballLeaveScreen, this);	
+}
+
+function render(){
+	
 }
 
 function initBricks() {
