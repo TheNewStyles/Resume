@@ -43,7 +43,7 @@ hr {
 
 header {
   background-color: #999;
-  background-image: url(../img/strongmen.jpg);
+  background-image: url(../img/Logos/strongmen.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   -webkit-background-size: cover;
@@ -192,6 +192,14 @@ and (max-device-width : 1024px)  {
   font-size: 1.1em;
 }
 
+@media screen and (max-width: 800px) {
+
+  .work-display span {
+    text-align: center;
+  }
+
+}
+
 /* ------------------- Grid -------------------*/
 
 .container {
@@ -269,6 +277,7 @@ and (max-device-width : 1024px)  {
 
 .gallery h2 {
   text-align: center;
+  min-height:  58px;
 }
 
 @media screen and (min-width: 40em) {
@@ -327,7 +336,7 @@ and (max-device-width : 1024px)  {
   padding: 3em 1em;
   margin-top: 3em;
   margin-bottom: 3em;
-  text-align: center;
+  text-align: center;  
 }
 
 .spotlight img {
@@ -338,6 +347,7 @@ and (max-device-width : 1024px)  {
   display: block;
   border-radius: 2%;
   overflow: hidden; 
+  margin-top: 40px;
 }
 
 .spotlight h1 {
@@ -365,7 +375,7 @@ and (max-device-width : 1024px)  {
   cursor: pointer;
 }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 800px) {
   .spotlight {
     padding: 6em;
     text-align: left;
@@ -879,7 +889,7 @@ a.back-to-top {
   z-index: 999;
   right: 20px;
   bottom: 20px;
-  background: #093a3e url("../img/up-arrow.png") no-repeat center 43%;
+  background: #093a3e url("../img/Logos/up-arrow.png") no-repeat center 43%;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   border-radius: 30px;
