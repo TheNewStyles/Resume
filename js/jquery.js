@@ -1,27 +1,27 @@
 ////////////////// Nav menu  //////////////////
-$(function() {
-    var pull        = $('#pull');
-        menu        = $('nav ul');
-        menuHeight  = menu.height();
-        var $hamburger = $(".hamburger");
+// $(function() {
+//     var pull        = $('#pull');
+//         menu        = $('nav ul');
+//         menuHeight  = menu.height();
+//         var $hamburger = $(".hamburger");
  
-    $(pull).on('click', function(e) {
-        e.preventDefault();
-        menu.slideToggle();
-    });
+//     $(pull).on('click', function(e) {
+//         e.preventDefault();
+//         menu.slideToggle();
+//     });
 
-      $hamburger.on("click", function(e) {
-    $hamburger.toggleClass("is-active");
-    // Do something else, like open/close menu
- });
-});
+//       $hamburger.on("click", function(e) {
+//     $hamburger.toggleClass("is-active");
+//     // Do something else, like open/close menu
+//  });
+// });
 
-$(window).resize(function(){
-    var w = $(window).width();
-    if(w > 320 && menu.is(':hidden')) {
-        menu.removeAttr('style');
-    }
-});
+// $(window).resize(function(){
+//     var w = $(window).width();
+//     if(w > 320 && menu.is(':hidden')) {
+//         menu.removeAttr('style');
+//     }
+// });
 
 ////////////////// Back to top button  //////////////////
 var amountScrolled = 300;
@@ -45,3 +45,13 @@ $(document).ready(function(){
         return false;
     });
 });
+
+
+////////////////// Nav Menu  //////////////////
+function openNav(){
+  document.getElementById("nav").style.height= "100%";
+}
+
+function closeNav(){
+  document.getElementById("nav").style.height = "0%";
+}
