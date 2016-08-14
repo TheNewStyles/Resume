@@ -106,12 +106,12 @@ footer hr {
     height:auto;    
     position:relative;
     z-index:200;
-    top: 700px;
+    /* top: 700px; */
     background-color: #fff;
     padding-top: 50px;
 }
 
-@media screen and (min-width: 800px) {
+/* @media screen and (min-width: 800px) {
   header {
     height: 700px;
   }
@@ -149,7 +149,7 @@ and (max-device-width : 1024px)  {
   }
   .wrap{
     top: 400px;
-  }
+  } */
 
 }
 
@@ -258,14 +258,14 @@ and (max-device-width : 1024px)  {
 
 /* ------------------- Gallery ------------------- */
 
-.gallery [class*="grid-2"], .gallery [class*="grid-3"]  {
+/* .gallery [class*="grid-2"], .gallery [class*="grid-3"]  {
   margin-bottom: 1%;
   margin-top: 1%;
   width: 50%;
 }
 
 .gallery a img {
-  -webkit-transform: translateZ(0); /* Fix chrome pixel shift */
+  -webkit-transform: translateZ(0); 
   transition: opacity .2s ease;
   opacity: 1;
   max-height: 250px;
@@ -286,7 +286,7 @@ and (max-device-width : 1024px)  {
   }
 }
 
-
+ */
 /* Experience */
 .experience [class*="row"] {
   border-bottom: dotted 1px #ccc;
@@ -331,7 +331,7 @@ and (max-device-width : 1024px)  {
 
 
 /*------------------- Spotlight -------------------*/
-.spotlight {
+/* .spotlight {
   background-color: #bfddf3;
   padding: 3em 1em;
   margin-top: 3em;
@@ -385,7 +385,7 @@ and (max-device-width : 1024px)  {
     text-align: left;
   }
 
-}
+} */
 
 
 /*------------------- Contact list -------------------*/
@@ -404,19 +404,19 @@ and (max-device-width : 1024px)  {
   font-family: Entypo;
   font-size: 35px;
   text-align: center;
-  color: #bbb;
+  color: #e7ecef;
   border-radius: 50%;
-  background: #eee;
+  background: #f05d5e;
   overflow: hidden;
   transition: color .3s;  
 }
 
 .social:hover {
-  color: #093a3e;
+  color: #272932;
   cursor: pointer;
 }
 
-.social {
+/* .social {
   box-shadow: rgb(210, 210, 210) 1px 1px,
     rgb(210, 210, 210) 2px 2px,
     rgb(211, 211, 211) 3px 3px,
@@ -467,13 +467,79 @@ and (max-device-width : 1024px)  {
     rgb(236, 236, 236) 18px 18px,
     rgb(237, 237, 237) 19px 19px,
     rgb(238, 238, 238) 20px 20px;
-}
+} */
 
 
 
 /*------------------- Nav Menu -------------------*/
 
-nav {
+.overlay {    
+    height: 0;
+    width: 100%;
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;   
+    background-color: #272932; 
+    opacity:0.98;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%; 
+    text-align: center; 
+    margin-top: 30px; 
+}
+
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #e7ecef;
+    display: block; 
+    transition: 0.3s; 
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f05d5e;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+#hamburger {  
+  color:#f05d5e;
+  margin-top: 5px;
+  margin-bottom: 5px; 
+  margin-left: 87%;
+}
+
+#hamburger:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+  .hamburger{
+    margin-top: 2px; 
+    margin-bottom: 2px;
+  }
+}
+
+/* nav {
     height: 45px;
     width: 100%;
     background: #093a3e;
@@ -542,11 +608,11 @@ nav a#pull {
 
 nav .hamburger {
   display: none;
-}
+} */
 
 /*------------------- nav media queries -------------------*/
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
     nav { 
         height: auto;
     }
@@ -649,11 +715,11 @@ nav .hamburger {
     nav li a {
         border-bottom: 1px solid #ED1C24;
     }
-}
+} */
 
 
 /*------------------- Hamburger menu nav -------------------*/
-.hamburger {
+./* hamburger {
   padding: 15px 15px;
   display: inline-block;
   cursor: pointer;
@@ -699,12 +765,12 @@ nav .hamburger {
   .hamburger-inner::before {
     top: -10px; }
   .hamburger-inner::after {
-    bottom: -10px; }
+    bottom: -10px; } */
 
 /*
  * Menu Collapse
  */
-.hamburger--collapse .hamburger-inner {
+/* .hamburger--collapse .hamburger-inner {
   top: auto;
   bottom: 0;
   transition-duration: 0.15s;
@@ -734,7 +800,7 @@ nav .hamburger {
     transition: top 0.12s 0.18s cubic-bezier(0.33333, 0, 0.66667, 0.33333), -webkit-transform 0.15s 0.42s cubic-bezier(0.215, 0.61, 0.355, 1);
     transition: top 0.12s 0.18s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.15s 0.42s cubic-bezier(0.215, 0.61, 0.355, 1);
     transition: top 0.12s 0.18s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.15s 0.42s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.15s 0.42s cubic-bezier(0.215, 0.61, 0.355, 1); }
-
+ */
 
 /*------------------- JavaScript Games -------------------*/
 
@@ -889,8 +955,10 @@ a.back-to-top {
   z-index: 999;
   right: 20px;
   bottom: 20px;
-  background: #093a3e url("../img/Logos/up-arrow.png") no-repeat center 43%;
+  background: #f05d5e url("../img/Logos/up-arrow.png") no-repeat center 43%;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   border-radius: 30px;
 }
+
+
