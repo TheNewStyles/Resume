@@ -207,6 +207,7 @@ and (max-device-width : 1024px)  {
   width:92%;
   margin-right: auto;
   margin-left: auto;
+  margin-top: 7%;
 }
 
 .row {
@@ -319,7 +320,7 @@ and (max-device-width : 1024px)  {
   line-height: 1.5;
   margin-bottom: 0;
   text-align: center;
-  margin: 0 auto;
+  margin: 0 auto;  
 }
 
 @media screen and (min-width: 40em) {
@@ -328,7 +329,12 @@ and (max-device-width : 1024px)  {
   }
 }
 
-
+@media screen and (max-width: 40em){
+  #education{
+    text-align: center;
+    margin-top: 12%;
+  }
+}
 
 /*------------------- Spotlight -------------------*/
 /* .spotlight {
@@ -473,70 +479,90 @@ and (max-device-width : 1024px)  {
 
 /*------------------- Nav Menu -------------------*/
 
-.overlay {    
-    height: 0;
-    width: 100%;
-    position: fixed; 
-    z-index: 1; 
-    left: 0;
-    top: 0;   
-    background-color: #272932; 
-    opacity:0.98;
-    overflow-x: hidden;
-    transition: 0.5s;
+.fixed-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 60px;
+  background-color: #272932;
+}
+
+.overlay {
+  height: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 400;
+  left: 0;
+  top: 0;
+  background-color: #272932;
+  opacity: 0.98;
+  overflow-x: hidden;
+  transition: 0.5s;
 }
 
 .overlay-content {
-    position: relative;
-    top: 25%;
-    width: 100%; 
-    text-align: center; 
-    margin-top: 30px; 
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
 }
 
-
 .overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: #e7ecef;
-    display: block; 
-    transition: 0.3s; 
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #e7ecef;
+  display: block;
+  transition: 0.3s;
 }
 
 .overlay a:hover, .overlay a:focus {
-    color: #f05d5e;
+  color: #f05d5e;
 }
 
 .overlay .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
 }
 
-#hamburger {  
-  color:#f05d5e;
-  margin-top: 5px;
-  margin-bottom: 5px; 
-  margin-left: 87%;
+#hamburger {
+  color: #f05d5e;
+  margin-top: 1px;  
+  margin-bottom: 1em;
+  z-index: 5; 
+  margin-left: 95%;  
 }
 
 #hamburger:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 @media screen and (max-height: 450px) {
-    .overlay a {font-size: 20px}
-    .overlay .closebtn {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
-    }
-  .hamburger{
-    margin-top: 2px; 
-    margin-bottom: 2px;
+  .overlay a {
+    font-size: 20px;
   }
+
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+
+  .hamburger {
+    margin-top: 2px;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 1000px){
+  #hamburger {
+    margin-left: 85%;
+  }  
 }
 
 /* nav {
