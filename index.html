@@ -11,6 +11,8 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,900' rel='stylesheet' type='text/css'> 
 
+
+
 	<!-- stylesheets -->
 	<link rel="stylesheet" href="styles/style.css" type="text/css" />	
 
@@ -25,6 +27,21 @@
 
 
 </head>
+
+<!-- Nav Menu   -->
+    <div class="fixed-nav-bar">    
+      <span id="hamburger" class="fa fa-bars fa-3x" onclick="openNav()"></span>  
+      <nav id="nav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="">Home</a>
+          <a href="">Contact</a>
+          <a href="">Portfolio</a>
+          <a href="">Resume</a>
+        </div>
+      </nav>
+    </div>
+
 
 <body>
 	
@@ -48,21 +65,7 @@
 
 	<a href="#" class="back-to-top">Back To Top</a>
 
-	<div class="wrap">
-		<div class="container">
 
-		    <!-- Nav Menu   -->
-		    <span id="hamburger" class="fa fa-bars fa-3x col-md-1 col-md-offset-11 col-xs-2 col-xs-offset-10" onclick="openNav()"></span>  
-		    <nav id="nav" class="overlay">
-		        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-		      <div class="overlay-content">
-		        <a href="">Home</a>
-		        <a href="">Contact</a>
-		        <a href="">Portfolio</a>
-		        <a href="">Resume</a>
-		      </div>
-		    </nav>
-			
 			<!-- Introduction-->
 		<!-- 	<section class="center">
 				<h1 id="welcome">Welcome</h1>
@@ -134,7 +137,7 @@
 		<!-- New container-->
 		<div class="container">
 
-			<h2 class="grid-2">Education</h2>
+			<h2 id= "education" class="grid-2">Education</h2>
 			<section class="grid-4">	
 				<h2>B.S. Information Systems from the University of Utah.</h2>
 			</section>
