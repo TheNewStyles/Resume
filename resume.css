@@ -75,14 +75,6 @@ footer hr {
   min-width: 100%;
 }
 
-.wrap {    
-    height:auto;    
-    position:relative;
-    z-index:200;
-    background-color: #fff;
-    padding-top: 50px;
-}
-
 .experience h1{
   text-align: center;
 }
@@ -155,13 +147,6 @@ button a div{
     clear: both;
 }
 
-/**
- * For IE 6/7 only
- */
-.row {
-  *zoom: 1;
-}
-
 .grid-1,
 .grid-2,
 .grid-3,
@@ -186,7 +171,7 @@ button a div{
 }
 
 
-/* Experience */
+/*------------------- Experiance Block -------------------*/
 .experience [class*="row"] {
   border-bottom: dotted 1px #ccc;
   padding-top: 1em;
@@ -213,7 +198,7 @@ button a div{
 
 /*------------------- Education Block -------------------*/
 .education {
-  font-family: "Lato", sans-serif;
+  font-family: 'Exo 2', sans-serif;
   line-height: 1.5;
   margin-bottom: 0;
   text-align: center;
@@ -276,6 +261,7 @@ button a div{
 }
 
 .overlay {
+  font-family: 'Exo 2', sans-serif;
   height: 0;
   width: 100%;
   position: fixed;
@@ -353,23 +339,5 @@ button a div{
 
 
 
-
-
-
-/*------------------- Back to top button -------------------*/
-a.back-to-top {
-  display: none;
-  width: 60px;
-  height: 60px;
-  text-indent: -9999px;
-  position: fixed;
-  z-index: 999;
-  right: 20px;
-  bottom: 20px;
-  background: #f05d5e url("../../images/logos/up-arrow.png") no-repeat center 43%;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  border-radius: 30px;
-}
 
 
