@@ -295,6 +295,10 @@ button a div{
   color: #f05d5e;
 }
 
+.closebtn{
+  font-family: sans-serif;
+}
+
 .overlay .closebtn {
   position: absolute;
   top: 20px;
