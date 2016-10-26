@@ -16,7 +16,7 @@
 
 
 	  Mail: tyler.peterson@utah.edu
-	    Telefon: 435-790-9724
+	  Telephone: 435-790-9724
 	    
 	  Web:   github.io/thenewstyles
 	          
@@ -29,7 +29,7 @@
 	<meta name="theme-color" content="#f05d5e">
 
 	<!-- favicon-->
-	<link rel="shortcut icon" href="../../images/logos/Space-Shooter.png">
+	<link rel="shortcut icon" href="img/favicon.ico">
 	<!-- custom css -->
 	<link rel="stylesheet" href="resume.css" type="text/css" />	
 	<!-- bootstrap -->
@@ -51,18 +51,14 @@
 	      <nav id="nav" class="overlay">
 	          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 	        <div class="overlay-content">
-	          <a href="../../index.html">Home</a>
-	          <a href="../../index.html#contact">Contact</a>
-	          <a href="../../index.html#portfolio">Portfolio</a>
+	          <a href="https://thenewstyles.github.io/portfolio/index.html">Home</a>
+	          <a href="https://thenewstyles.github.io/portfolio/index.html#contact">Contact</a>
+	          <a href="https://thenewstyles.github.io/portfolio/index.html#portfolio">Portfolio</a>
 	          <a href="#">Resume</a>
 	        </div>
 	      </nav>
 	    </div>
-	</header>
-
-	<!-- Back to top button -->
-	<a href="#" class="back-to-top">Back To Top</a>
-		
+	</header>		
 
 	<main>		
 		<!-- New container-->
@@ -121,7 +117,7 @@
 					</div>
 					<div class="grid-4">
 						<ul>
-							<li>Created front end behavioral tests in Ruby with Watir webdriver.</li>
+							<li>Created frontend behavioral tests in Ruby with Watir webdriver.</li>
 							<li>Used Jira to track bugs and tasks throughout Software Development Life Cycle.</li>
 							<li>Created and updated QA policies and procedures used including creating documentation for the on-boarding and exit processes for all UIT departments.</li>
 							<li>Worked to create a QA process for the newly created department.</li>
@@ -187,7 +183,7 @@
 					</div>
 
 				<button class="grid-4">
-				  <a class="btn btn-lg btn-primary" href="../../images/Resume.pdf" download>
+				  <a class="btn btn-lg btn-primary" href="img/Resume.pdf" download>
 				  	<div>DOWNLOAD PDF RESUME</div>
 				  </a>			
 				</button>
@@ -205,8 +201,19 @@
 	</main>
 
 	<!-- jquery  -->
-	<script src="../../js/jquery-3.1.0.min.js"></script>
-	<script type="text/javascript" src="../../portfolio.js"></script>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+	<script>
+		////////////////// Nav Menu  //////////////////
+		function openNav(){
+		  document.getElementById("nav").style.height= "100%";
+		}
 
+		function closeNav(){
+		  document.getElementById("nav").style.height = "0%";
+		}
+	</script>
+	
 </body>
 </html>
