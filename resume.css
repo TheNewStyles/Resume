@@ -1,0 +1,375 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+ 
+body {
+  font: 100% sans-serif;
+  margin: 0;
+  background-color: #fff;
+  color: #666;
+  font-weight: 500;
+}
+
+h1, h2, h3 {
+  font-family: 'Vollkorn', serif;
+  font-weight: 700;
+}
+
+a {
+  color: #3aafb9;
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  color: #093a3e;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.8;
+  margin-top: 0;
+  font-family: 'Exo 2', sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+hr {
+  border-top: 1px solid #ccc;
+  border-bottom: none;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+section h1 {
+  font-size: 1.8em;
+  line-height: 1em;
+  margin-bottom: .6em;
+}
+
+
+section ul li {
+  font-family: 'Exo 2', sans-serif;
+  font-size: 1.05em;
+  margin-left: -10px;
+  line-height: 1.8;
+}
+
+footer {
+  margin-bottom: 1em;
+  color: #888;
+}
+
+footer hr {
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+.center {
+  text-align: center;
+}
+
+.center hr {
+  min-width: 100%;
+}
+
+.wrap {    
+    height:auto;    
+    position:relative;
+    z-index:200;
+    background-color: #fff;
+    padding-top: 50px;
+}
+
+.experience h1{
+  text-align: center;
+}
+
+#degree{
+  font-weight: 400;
+}
+
+button {
+  background-color: #3aafb9;
+  border: 1px solid #3aafb9;
+  border-radius: 2%;
+}
+
+button a {
+  color: white;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 1.2em;
+}
+
+button a div{
+  padding: 7px;
+}
+
+@media screen and (max-width: 800px) {
+
+  .grid-2 h3 {
+    text-align: center;
+  }
+
+  div #education{
+    margin-top: 100px;
+  }
+
+  .grid-4 h1, .grid-4 p{
+    text-align: center;
+  }
+
+  #degree{
+    font-weight: 400;
+    text-align: center;
+  }
+
+}
+
+/* ------------------- Grid -------------------*/
+
+.container {
+  max-width: 50em;
+  width:92%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 7%;
+}
+
+.row {
+  clear: both;
+  margin-right: -1%;
+  margin-left:  -1%;
+  
+}
+
+.row:before,
+.row:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.row:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ */
+.row {
+  *zoom: 1;
+}
+
+.grid-1,
+.grid-2,
+.grid-3,
+.grid-4,
+.grid-5,
+.grid-6 {
+  float: left;
+  width:100%;
+  padding: 0 1%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 40em) {
+  .grid-1 { width: 16.6666666%; }
+  .grid-2 { width: 33.3333333%; }
+  .grid-3 { width: 50%; }
+  .grid-4 { width: 66.6666666%; }
+  .grid-5 { width: 83.3333333%; }
+  .grid-6 { width: 100%; }
+
+}
+
+
+/* Experience */
+.experience [class*="row"] {
+  border-bottom: dotted 1px #ccc;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.experience h2 {
+  margin-bottom: 0;
+}
+
+.experience h2, .experience p {
+  text-align: center;
+}
+
+.experience [class*="row"]:last-of-type {
+  border: none;
+}
+
+@media screen and (min-width: 40em) {
+  .experience h2, .experience p {
+    text-align: left;
+  }
+}
+
+/*------------------- Education Block -------------------*/
+.education {
+  font-family: "Lato", sans-serif;
+  line-height: 1.5;
+  margin-bottom: 0;
+  text-align: center;
+  margin: 0 auto;  
+}
+
+@media screen and (min-width: 40em) {
+  .education {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 40em){
+  #education{
+    text-align: center;
+    margin-top: 12%;
+  }
+}
+
+
+/*------------------- Contact list -------------------*/
+
+.contact {
+  padding: 50px 0;
+  text-align: center;    
+}
+
+.social {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  margin: 0 10px;
+  line-height: 70px;
+  font-family: Entypo;
+  font-size: 35px;
+  text-align: center;
+  color: #e7ecef;
+  border-radius: 50%;
+  background: #f05d5e;
+  overflow: hidden;
+  transition: color .3s;  
+}
+
+.social:hover {
+  color: #272932;
+  cursor: pointer;
+}
+
+
+/*------------------- Nav Menu -------------------*/
+
+.fixed-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 60px;
+  background-color: #272932;
+}
+
+.overlay {
+  height: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 400;
+  left: 0;
+  top: 0;
+  background-color: #272932;
+  opacity: 0.98;
+  overflow-x: hidden;
+  transition: .5s;
+  overflow: hidden;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #e7ecef;
+  display: block;
+  transition: .3s;}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f05d5e;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+#hamburger {
+  color: #f05d5e;
+  margin-top: 1px;  
+  margin-bottom: 1em;
+  z-index: 5; 
+  margin-left: 95%;  
+}
+
+#hamburger:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+
+  .hamburger {
+    margin-top: 2px;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 1000px){
+  #hamburger {
+    margin-left: 85%;
+  }  
+}
+
+
+
+
+
+
+/*------------------- Back to top button -------------------*/
+a.back-to-top {
+  display: none;
+  width: 60px;
+  height: 60px;
+  text-indent: -9999px;
+  position: fixed;
+  z-index: 999;
+  right: 20px;
+  bottom: 20px;
+  background: #f05d5e url("../../images/logos/up-arrow.png") no-repeat center 43%;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+}
+
+
