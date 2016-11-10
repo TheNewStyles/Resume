@@ -200,7 +200,6 @@ button a div{
 .education {
   font-family: 'Exo 2', sans-serif;
   line-height: 1.5;
-  margin-bottom: 0;
   text-align: center;
   margin: 0 auto;  
 }
@@ -232,7 +231,7 @@ button a div{
   height: 70px;
   margin: 0 10px;
   line-height: 70px;
-  font-family: Entypo;
+  font-family: Entypo, sans-serif;
   font-size: 35px;
   text-align: center;
   color: #e7ecef;
@@ -270,7 +269,6 @@ button a div{
   top: 0;
   background-color: #272932;
   opacity: 0.98;
-  overflow-x: hidden;
   transition: .5s;
   overflow: hidden;
 }
