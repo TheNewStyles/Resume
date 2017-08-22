@@ -13,13 +13,13 @@
 	  /:/\/__/  /:;;/__/ \:\  \    \:\:\/  / \;:::/  /     
 	  \/__/     \/__/     \:\__\    \:\/  /   |:\/__/      
 	                       \/__/     \/__/     \|__|
-	  
+
 	  Mail: tyler.peterson@utah.edu
 	  Telephone: 435-790-9724
 	  Web:   https://github.com/TheNewStyles
 	          
 	  *************************************
-	  -->
+	-->
 
 	<meta charset="utf-8" />
 	<title>Tyler Peterson's Resume</title>
@@ -29,7 +29,7 @@
 	<!-- favicon-->
 	<link rel="shortcut icon" href="img/favicon.ico">
 	<!-- custom css -->
-	<link rel="stylesheet" href="resume.css" type="text/css" />	
+	<link rel="stylesheet" href="main.css" type="text/css" />	
 	<!-- bootstrap -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<!-- google fonts -->
@@ -43,18 +43,6 @@
 <body>
 
 	<header>
-		<!-- Nav Menu   -->
-	    <div class="fixed-nav-bar">    
-	      <span id="hamburger" class="fa fa-bars fa-3x" onclick="openNav()"></span>  
-	      <nav id="nav" class="overlay">
-	          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-	        <div class="overlay-content">
-	          <a href="https://thenewstyles.github.io/portfolio/index.html">Home</a>
-	          <a href="https://thenewstyles.github.io/portfolio/index.html#contact">Contact</a>
-	          <a href="https://thenewstyles.github.io/portfolio/index.html#portfolio">Portfolio</a>
-	        </div>
-	      </nav>
-	    </div>
 	</header>		
 
 	<main>		
@@ -68,18 +56,33 @@
 					<li>Graduated 2014.</li>
 					<li>TEK club PR and marketing officer 2012-2013.</li>
 					<li>Opportunity Scholars Scholarship 2012-2014.</li>
+					<li>Rugby Club Member</li>
 				</ul>
 			</section>
 			
 			<hr class="grid-6">
 				
 			<!--Experience Tables-->
-			<section class="experience">				
+			<section class="experience">	
+					<div class="row">
+							<div class="grid-2">
+								<h2>Coyote Logistics - A UPS Company</h2>
+								<h3>Software Development Engineer In Test</h3>
+								<p>April 2017 - Present</p>
+							</div>
+							<div class="grid-4">
+								<ul>
+									<li>Working as a developer on a 'Record and Replay' testing tool that can work with either Windows desktop applications or web based applications.</li>
+									<li>Using the agile development process to properly effort work and determine velocity.</li>
+									<li>Creating unit and integration tests using Microsoft testing framework.</li>
+								</ul>
+							</div>
+						</div>			
 				<div class="row">
 					<div class="grid-2">
 						<h2>Coyote Logistics - A UPS Company</h2>
 						<h3>Software Quality Assurance</h3>
-						<p>Dec. 2015 - Present</p>
+						<p>December 2015 - May 2017</p>
 					</div>
 					<div class="grid-4">
 						<ul>
@@ -87,7 +90,7 @@
 							<li>Experienced in designing and executing test plans/test cases throughout the Software Development Life Cycle.</li>
 							<li>Managed and maintained QA environment databases and servers. Verifying the setup was correctly configured and proper test data was present for testing.</li>
 							<li>Tested large .NET desktop application and services in an Agile environment utilizing a quality driven development approach.</li>
-							<li>Responsible for Sprint success by tracking backlog items and bugs with Team Foundation Server. Keeping at risk Sprints visible to entire development department.</li>
+							<li>Worked with Business Analysts to determine if test cases were suitable to cover all requirements and get any unanswered questions resolved before development would begin.</li>
 						</ul>
 					</div>
 				</div>
@@ -179,11 +182,11 @@
 					    </div>
 					</div>
 
-				<button class="grid-4">
+				<!-- <button class="grid-4">
 				  <a class="btn btn-lg btn-primary" href="img/Resume.pdf" download>
 				  	<div>DOWNLOAD PDF RESUME</div>
 				  </a>			
-				</button>
+				</button> -->
 
 				</div>
 			</section>			
@@ -200,17 +203,6 @@
 	<!-- jquery  -->
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js"
   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-  crossorigin="anonymous"></script>
-	<script>
-		////////////////// Nav Menu  //////////////////
-		function openNav(){
-		  document.getElementById("nav").style.height= "100%";
-		}
-
-		function closeNav(){
-		  document.getElementById("nav").style.height = "0%";
-		}
-	</script>
-	
+  crossorigin="anonymous"></script>	
 </body>
 </html>
